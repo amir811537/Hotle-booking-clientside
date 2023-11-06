@@ -1,0 +1,188 @@
+[
+  {
+    "name": "Luxury Suite",
+    "description": "Our most spacious and luxurious suite, perfect for a romantic getaway.",
+    "pricePerNight": 300,
+    "roomSize": "600 sq ft",
+    "availability": 10,
+    "images": ["https://plus.unsplash.com/premium_photo-1661962688308-2b00b88b9765?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1495365200479-c4ed1d35e1aa?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1445991842772-097fea258e7b?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    "specialOffers": "Stay 3 nights, pay for 2",
+    "reviews": [
+      {
+        "username": "JohnDoe",
+        "rating": 4.5,
+        "comment": "Amazing room with a stunning view!",
+        "timestamp": "2023-11-01"
+      },
+      {
+        "username": "JaneSmith",
+        "rating": 5,
+        "comment": "The best room I've ever stayed in!",
+        "timestamp": "2023-10-25"
+      }
+    ]
+  },
+  {
+    "name": "Deluxe Room",
+    "description": "A comfortable room with all the essential amenities for a pleasant stay.",
+    "pricePerNight": 150,
+    "roomSize": "350 sq ft",
+    "availability": 5,
+    "images": ["https://images.unsplash.com/photo-1461988625982-7e46a099bf4f?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://plus.unsplash.com/premium_photo-1661923086373-73176f7c004a?auto=format&fit=crop&q=80&w=1450&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1490122417551-6ee9691429d0?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    "specialOffers": null,
+    "reviews": [
+      {
+        "username": "AliceJohnson",
+        "rating": 4,
+        "comment": "Good value for the price.",
+        "timestamp": "2023-11-03"
+      }
+    ]
+  },
+  {
+    "name": "Standard Room",
+    "description": "A simple and affordable room for budget-conscious travelers.",
+    "pricePerNight": 100,
+    "roomSize": "250 sq ft",
+    "availability": 8,
+    "images": ["https://images.unsplash.com/photo-1541971875076-8f970d573be6?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1494458453337-e9062e968178?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1481134803835-48d6de104072?auto=format&fit=crop&q=80&w=1469&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    "specialOffers": "10% off for bookings over 5 days",
+    "reviews": []
+  },
+  {
+    "name": "Premium Suite",
+    "description": "A luxurious suite with a private balcony and ocean view.",
+    "pricePerNight": 400,
+    "roomSize": "700 sq ft",
+    "availability": 6,
+    "images": ["https://plus.unsplash.com/premium_photo-1661876306620-f2f2989f8f8b?auto=format&fit=crop&q=80&w=1384&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://plus.unsplash.com/premium_photo-1661963630748-3de7ab820570?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    "specialOffers": "Complimentary breakfast included",
+    "reviews": [
+      {
+        "username": "SarahWilson",
+        "rating": 4.8,
+        "comment": "Unforgettable experience with breathtaking views!",
+        "timestamp": "2023-11-05"
+      },
+      {
+        "username": "DavidBrown",
+        "rating": 4.9,
+        "comment": "Perfect for a romantic getaway.",
+        "timestamp": "2023-10-28"
+      }
+    ]
+  },
+  {
+    "name": "Family Room",
+    "description": "Spacious room with two bedrooms and a kitchenette.",
+    "pricePerNight": 250,
+    "roomSize": "500 sq ft",
+    "availability": 4,
+    "images": ["image13.jpg", "image14.jpg", "image15.jpg"],
+    "specialOffers": "Kids stay for free",
+    "reviews": [
+      {
+        "username": "EmilyDavis",
+        "rating": 4.6,
+        "comment": "Perfect for a family vacation.",
+        "timestamp": "2023-11-02"
+      }
+    ]
+  },
+  {
+    "name": "Executive Suite",
+    "description": "An elegant suite with a separate living area and a city view.",
+    "pricePerNight": 350,
+    "roomSize": "550 sq ft",
+    "availability": 8,
+    "images": ["https://plus.unsplash.com/premium_photo-1681881508125-b88e49fe68aa?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1519643225200-94e79e383724?auto=format&fit=crop&q=80&w=1476&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://plus.unsplash.com/premium_photo-1661591537036-6ea58b5b716e?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    "specialOffers": "Late checkout available",
+    "reviews": [
+      {
+        "username": "MichaelSmith",
+        "rating": 4.7,
+        "comment": "Business trip made enjoyable.",
+        "timestamp": "2023-11-04"
+      },
+      {
+        "username": "OliviaWhite",
+        "rating": 4.5,
+        "comment": "Great city views from the suite.",
+        "timestamp": "2023-10-29"
+      },
+      {
+        "username": "JamesJohnson",
+        "rating": 4.6,
+        "comment": "Highly recommended for executives.",
+        "timestamp": "2023-10-27"
+      }
+    ]
+  },
+  {
+    "name": "Honeymoon Suite",
+    "description": "A romantic suite with a heart-shaped jacuzzi and champagne on arrival.",
+    "pricePerNight": 500,
+    "roomSize": "750 sq ft",
+    "availability": 2,
+    "images": ["https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&q=80&w=1474&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=1469&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1439130490301-25e322d88054?auto=format&fit=crop&q=80&w=1632&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    "specialOffers": "Couples spa package included",
+    "reviews": [
+      {
+        "username": "SophiaAnderson",
+        "rating": 4.9,
+        "comment": "Perfect honeymoon experience!",
+        "timestamp": "2023-11-03"
+      },
+      {
+        "username": "EthanMoore",
+        "rating": 4.8,
+        "comment": "Unforgettable romantic getaway.",
+        "timestamp": "2023-10-30"
+      }
+    ]
+  },
+  {
+    "name": "Beachfront Bungalow",
+    "description": "Cozy bungalow steps away from the beach with a private garden.",
+    "pricePerNight": 350,
+    "roomSize": "450 sq ft",
+    "availability": 3,
+    "images": ["https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1517840901100-8179e982acb7?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1501117716987-c8c394bb29df?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    "specialOffers": "Free beach equipment rental",
+    "reviews": [
+      {
+        "username": "LiamTaylor",
+        "rating": 4.7,
+        "comment": "Perfect beachfront escape.",
+        "timestamp": "2023-11-01"
+      }
+    ]
+  },
+  {
+    "name": "Family Suite",
+    "description": "Spacious suite with two bedrooms, a kitchenette, and a private balcony.",
+    "pricePerNight": 450,
+    "roomSize": "800 sq ft",
+    "availability": 3,
+    "images": ["https://images.unsplash.com/photo-1504652517000-ae1068478c59?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1576678433413-202829a1ab98?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1522587750645-7e0e798b2b59?auto=format&fit=crop&q=80&w=1460&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    "specialOffers": "Complimentary wine and cheese on arrival",
+    "reviews": [
+      {
+        "username": "AvaClark",
+        "rating": 4.8,
+        "comment": "Perfect family getaway with stunning views!",
+        "timestamp": "2023-11-05"
+      }
+    ]
+  },
+  {
+    "name": "Penthouse Suite",
+    "description": "A luxurious penthouse with a rooftop terrace and panoramic city views.",
+    "pricePerNight": 600,
+    "roomSize": "1000 sq ft",
+    "availability": 2,
+    "images": ["https://images.unsplash.com/photo-1506664453913-f326aa81f54d?auto=format&fit=crop&q=80&w=1471&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1519643381401-22c77e60520e?auto=format&fit=crop&q=80&w=1473&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    "specialOffers": "Private rooftop dining experience included",
+    "reviews": []
+  }
+]
