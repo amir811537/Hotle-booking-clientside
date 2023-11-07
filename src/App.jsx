@@ -1,17 +1,20 @@
-import { Outlet } from "react-router-dom"
+import { Outlet, useLocation } from "react-router-dom"
 import Mainlayout from "./Layouts/Mainlayout"
 import Footer from "./Page/Footer"
 
 
 function App() {
-
+// const {pathname} =useLocation();
   return (
- <Mainlayout>
+<div className="mx-auto max-w-[1200px]">
 
 
+
+<Mainlayout>
   <Outlet></Outlet>
   <Footer></Footer>
  </Mainlayout>
+</div>
   )
 }
 

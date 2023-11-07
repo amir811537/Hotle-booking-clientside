@@ -5,12 +5,18 @@ import Registation from "../Page/Registation";
 import Rooms from "../Page/Rooms";
 import MyBooking from "../Page/MyBooking";
 import RooomDetails from "../Page/RooomDetails";
+import Home from "../Page/Home";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
     children: [
+
+      { path: "/",
+      element:<Home></Home>
+
+      },
       {
         path: "rooms",
         element: <Rooms></Rooms>,
