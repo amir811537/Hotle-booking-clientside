@@ -43,7 +43,7 @@ const RoomsCards = ({room}) => {
               </svg>
               {
   reviews && reviews.length > 0 ? (
-    <p>{reviews[0].rating}</p>
+    <p>{reviews[0].rating} </p>
   ) : (
     <p>No reviews available</p>
   )
@@ -56,14 +56,17 @@ const RoomsCards = ({room}) => {
             surrounded by ancient trees, stone walls, and open meadows.
           </p> */}
          <div className="flex flex-wrap items-center gap-3 mt-4">
-  <div className="bg-pink-500 text-white p-2 px-3 rounded-xl">
+  <div className="bg-[#301934] text-white p-2 px-3 rounded-xl">
     <span className="font-bold text-sm">Room Size:</span> {roomSize}
   </div>
-  <div className="bg-pink-500 text-white p-2 px-3 rounded-xl">
+  <div className="bg-[#301934] text-white p-2 px-3 rounded-xl">
     <span className="font-bold text-sm">Price:</span> ${pricePerNight} per Night
   </div>
-  <div className="bg-pink-500 text-white p-2 px-3 rounded-xl">
+  <div className="bg-[#301934] text-white p-2 px-3 rounded-xl">
     <span className="font-bold text-sm">Availability:</span> {availability}
+  </div>
+  <div className="bg-[#301934] text-white p-2 px-3 rounded-xl">
+    <span className="font-bold text-sm">review:</span> {reviews.length}
   </div>
 </div>
 {specialOffers && (
@@ -80,7 +83,7 @@ const RoomsCards = ({room}) => {
         
         
         <button
-            className="block w-full select-none rounded-lg bg-pink-500 py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            className="block w-full select-none rounded-lg bg-[#1a43bf] py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-white shadow-md shadow-[#DBDBDB]/20 transition-all hover:shadow-lg hover:shadow-[#DBDBDB]/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             type="button"
             data-ripple-light="true"
           >
