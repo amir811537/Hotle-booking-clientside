@@ -11,14 +11,16 @@ const Singelbookdata = ({ singelbooking, handelCencel }) => {
   }, []);
 
   const {
-    name,
+    RoomName,
     _id,
     pricePerNight,
     description,
     roomSize,
     availability,
     images,
+    dateofbook,specialOffers
   } = singelbooking;
+  console.log("data is ===>",singelbooking)
 
   const handleEdit = (id) => {
    navigate(`/updatebooking/${id}`)
@@ -36,16 +38,20 @@ const Singelbookdata = ({ singelbooking, handelCencel }) => {
         <div className="flex flex-col md:flex-row border-b border-gray-400 py-4">
           <div className="flex-shrink-0">
             <img
-              src={images[1]}
+              src={images[0]}
               alt="Product image"
               className="w-32 h-32 object-cover"
             />
           </div>
           <div className="mt-4 md:mt-0 md:ml-6">
-            <h2 className="text-lg font-bold">{name}</h2>
-            <p className="mt-2 text-gray-600">Product Description</p>
+            <h2 className="text-lg font-bold">{RoomName}</h2>
+            <p className="mt-2 text-gray-600">{specialOffers}</p>
             <div className="mt-4 flex items-center">
               <span className="ml-auto font-bold"> Price: {pricePerNight}</span>
+             
+            </div>
+            <div className="mt-4 flex items-center">
+            <span className="ml-auto font-bold">Booking Date:{dateofbook}</span>
             </div>
 
             <div className="flex justify-between">

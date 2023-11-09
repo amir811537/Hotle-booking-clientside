@@ -33,7 +33,7 @@ const Finalcheckout = () => {
       roomSize,
     };
     // console.log(order)
-    fetch("http://localhost:5000/bookings", {
+    fetch("https://hotel-booking-server-topaz.vercel.app/bookings", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -42,6 +42,7 @@ const Finalcheckout = () => {
     })
       .then((res) => res.json())
       .then((data) => {
+        console.log(data)
         if (data.insertedId) {
           const message = `Thank you for booking!\nRoom Name: ${RoomName}\nPrice: ${pricePerNight}\nRoom Size: ${roomSize}`;
           Swal.fire({
@@ -52,6 +53,7 @@ const Finalcheckout = () => {
             imageHeight: 200,
             imageAlt: "Custom image"
           });
+          
         }
       });
   };
@@ -87,7 +89,7 @@ const Finalcheckout = () => {
               name="roomname"
               defaultValue={name}
               className="input input-bordered"
-              required
+             required
             />
           </div>
           <div className="form-control">
@@ -100,7 +102,7 @@ const Finalcheckout = () => {
               defaultValue={"$" + pricePerNight}
               placeholder="password"
               className="input input-bordered"
-              required
+             required
             />
           </div>
           <div className="form-control">
@@ -112,7 +114,7 @@ const Finalcheckout = () => {
               name="availability"
               defaultValue={availability}
               className="input input-bordered"
-              required
+             disabled
             />
           </div>
           <div className="form-control">

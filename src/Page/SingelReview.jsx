@@ -1,9 +1,15 @@
-
+import { useEffect } from "react";
+import "aos/dist/aos.css";
+import AOS from "aos";
 const SingelReview = ({singelReview}) => {
         const {username,rating,comment}=singelReview;
+        useEffect(() => {
+            AOS.init();
+          }, []);
 
     return (
-         <div
+         <div data-aos="zoom-in-right"
+         onMouseEnter={() => AOS.refresh()}
         className="h-auto max-w-xl w-full border border-blue-200  text-gray-600 pl-2 dark:text-gray-300 cursor-pointer px-4 py-6 rounded-xl">
         <p className="font-thin whitespace-pre-line break-words">
         <p>Recently i book 

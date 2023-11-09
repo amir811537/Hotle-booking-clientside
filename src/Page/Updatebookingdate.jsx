@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { AuthContext } from "../AuthProvider/Authprovider";
 import { useLoaderData } from "react-router-dom";
 import axios from "axios";
+import Swal from "sweetalert2";
 
 const Updatebookingdate = () => {
   const { user } = useContext(AuthContext);
@@ -15,24 +16,36 @@ const Updatebookingdate = () => {
     dateofbook,
     _id,
   } = updatebooking;
+  // console.log(updatebooking)
 
   const handelUpdateDate = (event) => {
     event.preventDefault();
     const form = new FormData(event.currentTarget);
     const dateofbook = form.get("dateofbook");
-    console.log(dateofbook);
+    // console.log(dateofbook);
 
+
+    const data={
+      dateofbook
+    }
+  
     axios
-      .patch(
-        `http://localhost:5000/bookings/${_id}`,{
-            dateofbook
-        }
-       
+      .patch(`https://hotel-booking-server-topaz.vercel.app/bookings/${_id}`,
+      data
       )
-      .then((res) => console.log(res.data))
+      .then((res) => {
+      
+        Swal.fire({
+          position: "top-center",
+          icon: "success",
+          title: "Your Date is Updated",
+          showConfirmButton: false,
+          timer: 2500
+        });
+      })
       .catch((err) => console.log("err", err));
-
   };
+  
 
   return (
     <div>

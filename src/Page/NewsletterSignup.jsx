@@ -1,6 +1,13 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
+import { useEffect } from "react";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 const NewsletterSignup = () => {
+    useEffect(() => {
+        AOS.init();
+      }, []);
+
     const containerStyle = {
         backgroundColor: '#483786',
     };
@@ -17,7 +24,8 @@ const NewsletterSignup = () => {
     };
 
     return (
-        <div className="max-w-screen-xl mx-auto px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
+        <div  data-aos="zoom-in-right"
+        onMouseEnter={() => AOS.refresh()} className="max-w-screen-xl mx-auto px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
             <div className="px-6 py-6 rounded-lg md:py-12 md:px-12 lg:py-16 lg:px-16 xl:flex xl:items-center" style={containerStyle}>
                 <div className="xl:w-0 xl:flex-1">
                     <h2 className="text-2xl leading-8 font-extrabold tracking-tight text-white sm:text-3xl sm:leading-9">

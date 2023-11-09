@@ -3,6 +3,7 @@ import { SiHotelsdotcom } from "react-icons/si";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/Authprovider";
 import Swal from "sweetalert2";
+import axios from "axios";
 
 const Login = () => {
 
@@ -45,7 +46,24 @@ const Login = () => {
     signIn(email, password)
       .then((result) => {
         const user = result.user;
-        console.log(user);
+        Swal.fire({
+          icon: "success",
+          title: "Login success",
+          showConfirmButton: false,
+          timer: 3000,
+        });
+        const loginuser={email}
+
+      // get access token 
+      axios.post('https://hotel-booking-server-topaz.vercel.app/jwt',loginuser,{withCredentials:true})
+      .then(res=>{
+        console.log(res.data)
+        if(res.data){
+          navigate(location?.state ? location.state : "/");
+
+        }
+      })
+
       })
       .catch((error) => {
         console.log(error);

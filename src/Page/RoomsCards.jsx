@@ -1,13 +1,22 @@
 /* eslint-disable react/prop-types */
 // import { AiOutlineDollarCircle } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+import "aos/dist/aos.css";
+import AOS from "aos";
+import { useEffect } from 'react';
 const RoomsCards = ({room}) => {
+
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
     const {name,description,_id,availability,images,pricePerNight,reviews,roomSize,specialOffers}=room;
 
 
     return (
-        <div className="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
+        <div data-aos="zoom-in-right"
+        onMouseEnter={() => AOS.refresh()} className="   relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
         <div className="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
           <img
             src={images[0]}

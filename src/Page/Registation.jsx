@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { SiHotelsdotcom } from "react-icons/si";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/Authprovider";
+import Swal from "sweetalert2";
 const Registation = () => {
 
 const {createUser}=useContext(AuthContext);
@@ -20,7 +21,13 @@ const handelregister=(event)=>{
 createUser(email,password)
 .then(result=>{
     const user =result.user;
-    console.log(user)
+        Swal.fire({
+          icon: "success",
+          title: "registation success",
+          showConfirmButton: false,
+          timer: 3000,
+        });
+      
 })
 .then (error =>{
     console.log(error)

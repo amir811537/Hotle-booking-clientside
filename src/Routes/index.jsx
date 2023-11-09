@@ -9,22 +9,24 @@ import Home from "../Page/Home";
 import Finalcheckout from "../Page/Finalcheckout";
 import PrivateRoute from "./PrivateRoute";
 import Updatebookingdate from "../Page/Updatebookingdate";
+import ErrorPage from "../Page/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    errorElement:<ErrorPage></ErrorPage>,
     children: [
 
       { path: "/",
       element:<Home></Home>,
-      loader: () => fetch("http://localhost:5000/rooms"),
+      loader: () => fetch("https://hotel-booking-server-topaz.vercel.app/rooms"),
 
       },
       {
         path: "rooms",
         element: <Rooms></Rooms>,
-        loader: () => fetch("http://localhost:5000/rooms"),
+        loader: () => fetch("https://hotel-booking-server-topaz.vercel.app/rooms"),
       },
       {
         path: "mybooking",
@@ -34,18 +36,18 @@ const router = createBrowserRouter([
       {
         path:"/RoomDetails/:id",
         element:<RooomDetails></RooomDetails>,
-        loader:({params})=>fetch(`http://localhost:5000/rooms/${params.id}`)
+        loader:({params})=>fetch(`https://hotel-booking-server-topaz.vercel.app/rooms/${params.id}`)
       },
       {
         path: '/checkout/:id',
-        element:<Finalcheckout></Finalcheckout>,
-        loader:({params})=>fetch(`http://localhost:5000/rooms/${params.id}`)
+        element:<PrivateRoute><Finalcheckout></Finalcheckout></PrivateRoute>,
+        loader:({params})=>fetch(`https://hotel-booking-server-topaz.vercel.app/rooms/${params.id}`)
 
       },
       {
         path:'/updatebooking/:id',
         element:<Updatebookingdate></Updatebookingdate>,
-        loader:({params})=>fetch(`http://localhost:5000/bookings/${params.id}`)
+        loader:({params})=>fetch(`https://hotel-booking-server-topaz.vercel.app/bookings/${params.id}`)
       }
    
     ],
