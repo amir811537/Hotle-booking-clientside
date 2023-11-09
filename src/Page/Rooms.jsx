@@ -54,6 +54,7 @@ const Rooms = () => {
           <RoomsCards key={room._id} room={room}></RoomsCards>
         ))}
       </div>
+      
 
       {sortedRooms.length > initialRoomsToShow && (
         <div className="flex justify-center my-4">

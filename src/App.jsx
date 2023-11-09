@@ -1,4 +1,4 @@
-import { Outlet, useLocation } from "react-router-dom"
+import { Outlet } from "react-router-dom"
 import Mainlayout from "./Layouts/Mainlayout"
 import Footer from "./Page/Footer"
 

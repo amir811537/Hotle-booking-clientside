@@ -1,6 +1,9 @@
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { AuthContext } from "../AuthProvider/Authprovider";
 
 const Navbar = () => {
+  const {user}=useContext(AuthContext);
 
 
 
@@ -16,16 +19,15 @@ const Navbar = () => {
                 Rooms
               </NavLink>
 
-              <NavLink
-                className={({ isActive }) =>
-                  isActive ? "btn  text-white bg-[#ED8323] btn-sm" : "btn btn-ghost btn-sm"
-                }
-                to="/mybooking"
-              >
-                My Booking
-              </NavLink>
-
-              <NavLink
+           {
+            user?.email?    <NavLink
+            className={({ isActive }) =>
+              isActive ? "btn  text-white bg-[#ED8323] btn-sm" : "btn btn-ghost btn-sm"
+            }
+            to="/mybooking"
+          >
+            My Booking
+          </NavLink>:   <NavLink
                 className={({ isActive }) =>
                   isActive ? "btn  text-white bg-[#ED8323] btn-sm" : "btn btn-ghost btn-sm"
                 }
@@ -33,6 +35,9 @@ const Navbar = () => {
               >
                 Login
               </NavLink>
+           }
+
+           
 
               <NavLink
                 className={({ isActive }) =>
